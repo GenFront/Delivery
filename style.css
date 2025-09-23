@@ -34,9 +34,6 @@ body {
   
 }
 
-.main {}
-
-
 .container {
 
   max-width: 1230px;
@@ -64,3 +61,5 @@ body {
 .footer-menu {
   flex-grow: 1; /* Меню занимает все доступное пространство */
 }
+
+

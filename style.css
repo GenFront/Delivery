@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+  height: 124px;
+  border: 1px solid red;
+
+
+}
+
+.header-box {
+  border: 1px solid #000;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.header-logo, .footer-logo {
+  max-width: 100px;
+}
+
+.header-logo, .footer-logo img {
+  width: 100%;
+  
+}
+
+.main {}
+
+
+.container {
+
+  max-width: 1230px;
+  /* П о макету 1200px, устанавливаю 1230 потому что с двух сторон padding по 15px */
+  margin: 0px auto;
+  /* center the container */
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 100%;
+}
+
+.footer {
+  height: 156px;
+  border: 1px solid red;
+}
+
+.footer-box {
+  border: 1px solid #000;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-menu {
+  flex-grow: 1; /* Меню занимает все доступное пространство */
+}

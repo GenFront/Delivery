@@ -7,51 +7,92 @@ body {
   padding: 0;
 }
 
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Высота экрана */
+}
 
+.logo {
+  max-width: 100px;
+}
+.logo img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+    max-width: 1230px;
+    /* По макету 1200px, устанавливаю 1230 потому что с двух сторон padding по 15px */
+    margin: 0px auto; /* значение auto размещает блок по центру, и будет изменяться котейнер вместе с изменяющимся экраном */
+    padding: 0px 15px;
+    width: 100%;
+    height: 100%; /* Задаем значение, чтобы контейнер растянулся на свою высоту родительского блока В данном случае header*/
+
+  }
 .header {
-  height: 124px;
-  border: 1px solid red;
-
+  display: flex;
+  align-items: center;
+  min-height: 124px;
 
 }
 
 .header-box {
-  border: 1px solid #000;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-
-
 }
 
-.header-logo, .footer-logo {
-  max-width: 100px;
+
+ /* Войти */
+.header-control {
+  /* width: 46px; */
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  gap: 8px;
+  }
+ 
+
+.btn {
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 4px;
+  outline: none;
+}
+.btn-primary {
+border-radius: 2px;
+background:  rgba(24, 144, 255, 1);
+border: 1px solid  rgba(24, 144, 255, 1);
+color: rgba(255, 255, 255, 1);
 }
 
-.header-logo, .footer-logo img {
-  width: 100%;
-  
+.btn-outline {
+box-sizing: border-box;
+border: 1px solid  rgba(217, 217, 217, 1);
+border-radius: 2px;
+background: rgba(255, 255, 255, 1);
+color: rgba(89, 89, 89, 1);
+}
+.main {
+  flex-grow: 1;
+  /* Заставляет основной контент занимать все доступное пространство между хедером и футером */
+background: linear-gradient(180.00deg, rgba(245, 245, 245, 0) 1%,rgba(245, 245, 245, 1) 100%);
 }
 
-.container {
-
-  max-width: 1230px;
-  /* П о макету 1200px, устанавливаю 1230 потому что с двух сторон padding по 15px */
-  margin: 0px auto;
-  /* center the container */
-  padding-left: 15px;
-  padding-right: 15px;
-  height: 100%;
-}
 
 .footer {
-  height: 156px;
-  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  min-height: 156px;
+  margin-top: auto;
 }
 
 .footer-box {
-  border: 1px solid #000;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -59,7 +100,18 @@ body {
 }
 
 .footer-menu {
-  flex-grow: 1; /* Меню занимает все доступное пространство */
+  flex-grow: 1;
+  /* Меню занимает все доступное пространство */
 }
+.footer-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+
+
 
 

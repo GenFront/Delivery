@@ -168,14 +168,14 @@ background: linear-gradient(180.00deg, rgba(245, 245, 245, 0) 1%,rgba(245, 245, 
     gap: 10px;
   }
   
-  .header-control {
+  .header .header-control {
     width: 100%;
     justify-content: center;
     margin-left: 0;
     order: 3;
   }
   
-  .logo {
+  .header .logo {
     max-width: 80px;
     margin: 0 auto;
   }
@@ -204,6 +204,11 @@ background: linear-gradient(180.00deg, rgba(245, 245, 245, 0) 1%,rgba(245, 245, 
     flex-direction: column;
     gap: 20px;
     text-align: center;
+  }
+    /* Логотип в футере - без auto margin */
+  .footer .logo {
+    max-width: 80px;
+    margin: 0; /* Вот это важно! */
   }
   
   .footer-menu ul {

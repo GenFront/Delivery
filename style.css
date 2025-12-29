@@ -168,11 +168,13 @@ background: linear-gradient(180.00deg, rgba(245, 245, 245, 0) 1%,rgba(245, 245, 
     gap: 10px;
   }
   
-  .header .header-control {
+  .header-control {
     width: 100%;
     justify-content: center;
     margin-left: 0;
     order: 3;
+    flex-direction: row; /* ЯВНО для этого размера */
+    gap: 8px; /* ЯВНО для этого размера*/
   }
   
   .header .logo {
@@ -224,7 +226,7 @@ background: linear-gradient(180.00deg, rgba(245, 245, 245, 0) 1%,rgba(245, 245, 
 }
 
 /* Очень маленькие экраны: до 360px */
-@media (max-width: 360px) {
+/* @media (max-width: 360px) {
   .header-control {
     flex-direction: column;
     gap: 5px;
@@ -238,9 +240,4 @@ background: linear-gradient(180.00deg, rgba(245, 245, 245, 0) 1%,rgba(245, 245, 
   .footer-menu ul {
     font-size: 14px;
   }
-}
-
-
-
-
-
+} */

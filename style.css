@@ -111,6 +111,130 @@ background: linear-gradient(180.00deg, rgba(245, 245, 245, 0) 1%,rgba(245, 245, 
   gap: 15px;
 }
 
+/* Стили для десктопа (по умолчанию) */
+
+/* Планшеты: 769px - 1024px */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 960px;
+    padding: 0 12px;
+  }
+}
+
+/* Большие мобильные: 481px - 768px */
+@media (max-width: 768px) {
+    .container {
+    max-width: 720px;
+    padding: 0 10px;
+  }
+   .logo img {
+    max-height: 40px;
+    width: auto;
+  }
+  
+  .header {
+    min-height: 100px;
+  }
+  
+  .footer {
+    min-height: 130px;
+  }
+  
+  
+  .footer-social img {
+    max-height: 24px;
+    width: auto;
+  }
+}
+
+/* Мобильные: до 480px */
+@media (max-width: 480px) {
+ 
+ body {
+    font-size: 14px;
+  }
+  .container {
+    padding: 0 8px;
+  }
+  
+  /* Шапка для мобильных */
+  .header {
+    min-height: 80px;
+    padding: 10px 0;
+  }
+  
+  .header-box {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .header-control {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+    order: 3;
+  }
+  
+  .logo {
+    max-width: 80px;
+    margin: 0 auto;
+  }
+  
+  .btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+    .btn img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Основной контент */
+  .main {
+    padding: 15px 0;
+  }
+  
+  /* Подвал для мобильных */
+  .footer {
+    min-height: auto;
+    padding: 20px 0;
+  }
+  
+  .footer-box {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .footer-menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+}
+
+/* Очень маленькие экраны: до 360px */
+@media (max-width: 360px) {
+  .header-control {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .footer-menu ul {
+    font-size: 14px;
+  }
+}
+
 
 
 
